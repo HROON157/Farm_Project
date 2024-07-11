@@ -1,0 +1,76 @@
+/* App.css */
+
+
+.sideBar {
+  width: 15%;
+  background-color: #454545;
+  padding: 5px;
+  height: 100vh;
+  color: white;
+}
+/* App.css */
+.black-text {
+  color: black;
+}
+
+.content-container {
+  width: 85%;
+  background-color: black;
+  color: white;
+}
+
+.sideBar nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 70px;
+}
+
+.sideBar h4 {
+  text-align: center;
+  color: white;
+}
+
+.sideBar nav ul li {
+  margin-bottom: 10px;
+}
+
+.sideBar nav ul li a {
+  text-decoration: none;
+  color:white;
+}
+
+.sideBar nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.faded-text {
+  color: lightwhite;
+}
+
+.header, .middle, .footer {
+  padding: 20px;
+  color: white;
+}
+
+.header.active-header, .middle.active-middle {
+  background-color: #0000ff;
+  height: 160px;
+  padding-top: 100px;
+}
+
+.footer.active-footer {
+  background-color: black;
+  color: white;
+}
+
+
+.middle_area {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.footer {
+  background-color: #f8f9fa;
+  padding: 10px;
+  text-align: center;
+}
