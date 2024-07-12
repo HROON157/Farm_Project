@@ -1,66 +1,170 @@
-/* App.css */
+.App {
+  text-align: center;
+}
 
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
 
-.sideBar {
-  width: 15%;
-  background-color: #454545;
-  padding: 5px;
+.app-container {
+  
+  display: flex;
+  flex-direction: row;
   height: 100vh;
-  color: white;
 }
-/* App.css */
-.black-text {
-  color: black;
+.nav-icon {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right : 5px;
+  margin-bottom: 5px;
+
 }
 
-.content-container {
-  width: 85%;
-  background-color: black;
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+/* Side css */
+.sideBar {
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #343a40;
+  color: #fff;
+  padding: 20px;
+  z-index: 1000;
+}
+
+.sideBar h4 {
+  margin-bottom: 20px;
 }
 
 .sideBar nav ul {
   list-style-type: none;
   padding: 0;
-  margin-top: 70px;
-}
-
-.sideBar h4 {
-  text-align: center;
-  color: white;
 }
 
 .sideBar nav ul li {
-  margin-bottom: 10px;
+  margin: 10px 0;
 }
 
 .sideBar nav ul li a {
+  color: #fff;
   text-decoration: none;
-  color:white;
-}
-
-.sideBar nav ul li a:hover {
-  text-decoration: underline;
 }
 
 .faded-text {
-  color: lightwhite;
+  color: #aaa;
 }
 
+
+/* MAP Component Styling */
+
+.content-container {
+  margin-left: 250px;
+  width: calc(100% - 250px);
+  overflow-y: auto;
+ 
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.cards .col {
+  flex: 1 1 calc(25% - 1rem);
+  max-width: calc(25% - 1rem);
+  margin-bottom: 1rem;
+}
+
+.heading {
+  margin-bottom: 2rem;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+.rounded {
+  border-radius: 0px !important;
+}
+
+@media (max-width: 1200px) {
+  .cards .col {
+    flex: 1 1 calc(33.3333% - 1rem);
+    max-width: calc(33.3333% - 1rem);
+  }
+}
+
+@media (max-width: 992px) {
+  .cards .col {
+    flex: 1 1 calc(50% - 1rem);
+    max-width: calc(50% - 1rem);
+  }
+}
+
+@media (max-width: 768px) {
+  .cards .col {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
 .header, .middle, .footer {
-  padding: 20px;
+  padding: 10px;
   color: white;
+  
 }
 
 .header.active-header, .middle.active-middle {
   background-color: #0000ff;
-  height: 160px;
-  padding-top: 100px;
+  height: 30%;
+  
 }
 
 .footer.active-footer {
   background-color: black;
   color: white;
+  height: 70%;
 }
 
 
@@ -70,7 +174,7 @@
 }
 
 .footer {
-  background-color: #f8f9fa;
-  padding: 10px;
+  
+ 
   text-align: center;
 }
